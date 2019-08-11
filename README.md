@@ -257,6 +257,8 @@ elasticsearch:
 ```
 
 This will store Elasticsearch data inside `/path/to/storage`.
+  
+make sure the data folder permissions are 775 and owner *efim*  
 
 > :information_source: (Linux users) Beware that the Elasticsearch process runs as the [unprivileged `elasticsearch`
 user][esuser] is used within the Elasticsearch image, therefore the mounted data directory must be writable by the uid
